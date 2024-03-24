@@ -3,10 +3,7 @@ import pandas as pd
 
 from sklearn import linear_model
 
-import statsmodels.api as sm
-
 from sklearn.metrics import mean_squared_error, r2_score ,max_error
-from sklearn.model_selection import train_test_split
 
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -63,7 +60,7 @@ def regression_lineaire(data,colonne_cible,intercept=True):
 
     #test normalité
     print("\n test de Normalité des erreurs")
-    perso_stats.test_loi_normale(erreur_train)
+    perso_stats.test_loi_normale(erreur_train.sample(5000))
     print("\n") 
 
     return(regr)
