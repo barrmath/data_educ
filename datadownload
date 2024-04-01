@@ -2,7 +2,6 @@ cd donnee
 wget https://www.data.gouv.fr/fr/datasets/r/8a0b8d35-fea2-4c8d-9af1-fb25edb16980 -O fr-en-ecoles-effectifs-nb_classes.csv
 wget https://www.data.gouv.fr/fr/datasets/r/f4e17bfe-8350-4610-9494-fb61f595ce81 -O Table-de-passage-IPS-PCS-2022.xlsx
 wget https://www.data.gouv.fr/fr/datasets/r/896c2e97-6a64-4521-bcab-b5b0d3cf7065 -O fr-en-ips-ecoles-ap2022.csv
-wget https://www.data.gouv.fr/fr/datasets/r/8a0b8d35-fea2-4c8d-9af1-fb25edb16980 -O fr-en-ecoles-effectifs-nb_classes.csv
 wget https://www.data.gouv.fr/fr/datasets/r/6bf59bae-3c3b-40f5-ad8e-f05b0b2ac271 -O fr-en-college-effectifs-niveau-sexe-lv.csv
 wget https://www.data.gouv.fr/fr/datasets/r/a230247a-8aea-4112-be41-bc008c0d6966 -O fr-en-indicateurs-valeur-ajoutee-colleges.csv
 wget https://www.data.gouv.fr/fr/datasets/r/28e511a7-af0d-48c7-a8bb-2f38ec003f49 -O fr-en-ips-colleges-ap2022.csv
