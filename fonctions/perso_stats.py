@@ -184,7 +184,7 @@ def test_loi_normale(df,confiance=0.05):
     Returns :
         result : bool resultat du test"""
     
-    stat,pvalue = stats.shapiro(df)
+    stat,pvalue = stats.shapiro(df.sample(5000))
     print("\n\nInterprétation du test:\nH0 : La série suit une loi Normale\nH1 : La série ne suit pas une loi Normale")
     result = choix_H0_H1(pvalue,confiance)
     return result
