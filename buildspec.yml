@@ -1,5 +1,4 @@
  version: 0.2
-
 phases:
   install: 
     commands:
@@ -11,4 +10,4 @@ phases:
       - python notebook_to_html.py
   post_build:
     commands:
-      - aws s3 sync ./build $S3_BUCKET 
+      - aws s3 sync ./html $S3_BUCKET
