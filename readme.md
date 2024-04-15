@@ -33,3 +33,5 @@ pandas==1.5.3<br>
 scikit-learn==1.4.1.post1<br>
 scipy==1.12.0<br>
 seaborn==0.12.2<br>
+
+Pour la mise en ligne automatique : faire un bucket S3 en mode static website : https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteAccessPermissionsReqd.html
