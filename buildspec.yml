@@ -1,1 +1,14 @@
- 
+ version: 0.2
+
+phases:
+  install: 
+    commands:
+      - pip install --upgrade pip
+      - pip install --upgrade awscli
+      - pip install nbconvert 
+  build:
+    commands:
+      - python notebook_to_html.py
+  post_build:
+    commands:
+      - aws s3 sync ./build $S3_BUCKET 
