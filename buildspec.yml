@@ -11,5 +11,5 @@ phases:
       - python notebook_to_html.py
   post_build:
     commands:
-      - aws s3 rm $s3_BUCKET \
+      - aws s3 rm $S3_BUCKET \
       - aws s3 sync ./html $S3_BUCKET
