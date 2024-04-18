@@ -1,5 +1,3 @@
 __pycache__
-donnee_temp/college.csv
-donnee_temp/ecole.csv
-donnee_temp/lycee.csv
+donnee_temp
 .ipynb_checkpoints/
