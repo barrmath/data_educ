@@ -41,7 +41,7 @@ html_text = """<!DOCTYPE html>
 
 
 for file in notebook:
-    html_text += "<a href= " + file + ' target="blank">' + file[:-5] + "</a>\n<br>"
+    html_text += "<a href= '" + file + "'" + ' target="blank">' + file[:-5] + "</a>\n<br>"
 
 html_text += "</p></body>"
 
