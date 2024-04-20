@@ -1,4 +1,4 @@
-﻿rentree_scolaire;academie;code_du_departement;departement;uai;nom_de_l_etablissment;code_insee_de_la_commune;nom_de_la_commune;secteur;type_de_lycee;effectifs_voie_gt;effectifs_voie_pro;effectifs_ensemble_gt_pro;ips_voie_gt;ips_voie_pro;ips_ensemble_gt_pro;ecart_type_de_l_ips_voie_gt;ecart_type_de_l_ips_voie_pro
+﻿Rentrée scolaire;Académie;Code du département;Département;UAI;Nom de l'établissment;Code INSEE de la commune;Nom de la commune;Secteur;Type de lycée;Effectifs voie GT;Effectifs voie PRO;Effectifs Ensemble GT-PRO;IPS voie GT;IPS voie PRO;IPS Ensemble GT-PRO;Ecart-type de l'IPS voie GT;Ecart-type de l'IPS voie PRO
 2022-2023;LYON;001;AIN;0010021T;LYCEE PROFESSIONNEL MARCELLE PARDE LYCEE DES METIERS DU RESEAU TEXTILE MODE CUIR;01053;BOURG EN BRESSE;public;LP;;520.0;520.0;;86.5;86.5;;24.3
 2022-2023;LYON;001;AIN;0010034G;LYCEE POLYVALENT PAUL PAINLEVE;01283;OYONNAX;public;LPO;461.0;210.0;671.0;86.9;70.7;81.8;31.3;20.0
 2022-2023;AMIENS;002;AISNE;0020031Y;LYCEE D ENSEIGNEMENT GENERAL ET TECHNOLOGIQUE FREDERIC ET IRENE JOLIOT CURIE;02381;HIRSON;public;LEGT;560.0;;560.0;98.5;;98.5;31.0;
