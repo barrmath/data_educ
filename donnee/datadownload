@@ -1,4 +1,3 @@
-cd donnee
 echo effacement des fichiers csv
 rm *.csv
 echo effacement des fichiers xlsx
