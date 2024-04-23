@@ -8,6 +8,18 @@ all_file = listdir()
 # liste vide, servira pour crée un index avec les adresses des notebooks
 notebook = []
 
+# voir si un fichier intro_index.md existe
+intro_index = ""
+try:
+    with open("intro_index.md", "r") as f:
+        intro_index = f.readlines()
+except:
+    pass
+text_intro = ""
+for text in intro_index:
+    text_intro += text
+
+
 # créer le dossier html et gerer si le dossier existe deja
 try:
     mkdir("html")
@@ -29,7 +41,7 @@ for file in all_file:
             f.write(htmldata)
 
 # faire un fichier index.html avec les liens vers les page html notebook
-# inserer un texte d intro  + premier markdown en dessous pour habiller l index. 
+# inserer le premier markdown en dessous pour habiller l'index.
 
 html_text = """<!DOCTYPE html>
 <html lang="fr">
@@ -38,14 +50,15 @@ html_text = """<!DOCTYPE html>
     <title>index</title>
   </head>
   <body>
-  <p>index généré par <a href=https://github.com/barrmath/jupyter2html >https://github.com/barrmath/jupyter2html</a><br><br>\n"""
+  <p>index généré par <a href=https://github.com/barrmath/jupyter2html >https://github.com/barrmath/jupyter2html</a><br>\n"""
 
-
+html_text += "<p>" + text_intro + "</p>"
 for file in notebook:
-    html_text += "<a href= '" + file + "'" + ' target="blank">' + file[:-5] + "</a>\n<br>"
+    html_text += (
+        "<a href= '" + file + "'" + ' target="blank">' + file[:-5] + "</a>\n<br>"
+    )
 
 html_text += "</p></body>"
 
 with open("html/index.html", "w") as f:
     f.write(html_text)
-
