@@ -29,6 +29,7 @@ for file in all_file:
             f.write(htmldata)
 
 # faire un fichier index.html avec les liens vers les page html notebook
+# inserer un texte d intro  + premier markdown en dessous pour habiller l index. 
 
 html_text = """<!DOCTYPE html>
 <html lang="fr">
@@ -47,3 +48,4 @@ html_text += "</p></body>"
 
 with open("html/index.html", "w") as f:
     f.write(html_text)
+
