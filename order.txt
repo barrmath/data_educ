@@ -1,0 +1,6 @@
+"Preparation dataframe college.ipynb"
+"Preparation dataframe ecole.ipynb"
+"Preparation dataframe lycee.ipynb"
+"Analyse finale.ipynb"
+"Comparaison college.ipynb"
+"Test de prediction des notes du brevet.ipynb"
