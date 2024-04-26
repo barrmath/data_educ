@@ -1,12 +1,14 @@
 from nbconvert import HTMLExporter
+import nbformat
 from os import listdir
 from os import mkdir
 
 # lister les notebooks present à la racine
 all_file = listdir()
 
-# liste vide, servira pour crée un index avec les adresses des notebooks
-notebook = []
+# dico vide, servira pour crée un index avec les adresses des notebooks en clé et description en valeur
+notebook_html = {}
+
 
 # voir si un fichier intro_index.md existe
 intro_index = ""
@@ -34,7 +36,8 @@ for file in all_file:
         htmlexport = HTMLExporter()
         htmlexport.exclude_input = True
         htmldata, ressource = htmlexport.from_file(file)
-        notebook.append(file[:-6] + ".html")
+        jake_notebook = nbformat.read(file, as_version=4)
+        notebook_html[file[:-6] + ".html"] = jake_notebook.cells[1].source
         # write to output file
         outputdata = "html/" + file[:-6] + ".html"
         with open(outputdata, "w") as f:
@@ -53,9 +56,11 @@ html_text = """<!DOCTYPE html>
   <p>index généré par <a href=https://github.com/barrmath/jupyter2html >https://github.com/barrmath/jupyter2html</a><br>\n"""
 
 html_text += "<p>" + text_intro + "</p>"
-for file in notebook:
+
+for file in notebook_html.keys():
     html_text += (
-        "<a href= '" + file + "'" + ' target="blank">' + file[:-5] + "</a>\n<br>"
+        "<a href= '" + file + "'" + ' target="blank">' + file[:-5] + "</a>\n<br>" +
+        notebook_html[file] + "<br><br>"
     )
 
 html_text += "</p></body>"
